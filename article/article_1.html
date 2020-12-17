@@ -32,7 +32,7 @@
 								<span>ARTICLES</span>
 
 						</a>
-							<ul><li><a href="../article/list_notice_1.html" class="block"><i class="fas fa-exclamation-circle"></i> <span>notice</span></a></li><li><a href="../article/list_free_1.html" class="block"><i class="far fa-comment-dots"></i> <span>free</span></a></li>
+							<ul><li><a href="../article/list_notice_1.html" class="block"><i class="fas fa-exclamation-circle"></i> <span>NOTICE</span></a></li><li><a href="../article/list_free_1.html" class="block"><i class="far fa-comment-dots"></i> <span>FREE</span></a></li><li><a href="../article/list_study_1.html" class="block"><i class="fas fa-pencil-alt"></i> <span>STUDY</span></a></li>
 							</ul></li>
 						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
 						</a>
@@ -55,30 +55,81 @@
 
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
-				<h1 class="con"><i class="fas fa-exclamation-circle"></i> <span>Notice</span></h1>
-			</section><!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+				<h1 class="con"><i class="fas fa-pencil-alt"></i> <span>STUDY</span></h1>
+			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <section class="article_detail con-min-width">
 	<div class="con">
 		<table class="detail_top width-inherit">
-			<tr><td class="td_title" colspan="7">제목1</td></tr><tr><td class="td_id">번호: 1</td><td class="td_writer">작성자: aaa</td><td class="td_regDate">등록일: 2020-12-17 10:57:30</td><td class="td_updateDate">수정일: 2020-12-17 10:57:30</td><td class="blank"></td><td class="td_hit">조회수: 0</td><td class="td_rec">추천수: 0</td></tr>
+			<tr><td class="td_title" colspan="7">[SQL] 데이터베이스,테이블,row 추가</td></tr><tr><td class="td_id">번호: 1</td><td class="td_writer">작성자: 관리자</td><td class="td_regDate">등록일: 2020-12-18 01:07:10</td><td class="td_updateDate">수정일: 2020-12-18 01:07:10</td><td class="blank"></td><td class="td_hit">조회수: 0</td><td class="td_rec">추천수: 0</td></tr>
 		</table>
 		<table class="detail_body width-inherit">
 			<tr>
 			<td class="td_body">
-			내용1
+			# DB생성
+```
+CREATE DATABASE `DB이름`;
+```
+
+# table 생성
+```
+CREATE TABLE `테이블명` (
+ `칼럼` 타입 조건,
+ `칼럼2` 타입 조건,
+);
+```
+
+# row 생성
+```
+INSERT INTO `테이블명`
+SET `칼럼1` = 'data',
+`칼럼2` = 'data';
+```
+```
+INSERT INTO `테이블명` (`칼럼1`,`칼럼2)
+VALUES ('data','data');
+```
+
+# 예시
+```
+CREATE DATABASE textBoard;
+USE textBoard;
+
+CREATE TABLE article (
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    regDate DATETIME NOT NULL,
+    title CHAR(200) NOT NULL,
+    `body` TEXT NOT NULL,
+    memberId INT(10) UNSIGNED NOT NULL, 
+);
+
+INSERT INTO article
+SET regDate = NOW(),
+title = '제목1',
+`body` = '내용1',
+memberId = 1;
+```
 			</td>
 			</tr>
 		</table>
 		<table class="detail_movePage width-inherit">
 			<tr>
-			<td class="page-back"></td><td class="page-list"><a href="list_notice_1.html" class="hover_bottomLine">목록</a></td><td class="page-next"><a href="article_2.html" class="hover_bottomLine">다음글 &gt</a><td>
+			<td class="page-back"></td><td class="page-list"><a href="list_study_1.html" class="hover_bottomLine">목록</a></td><td class="page-next"><a href="article_2.html" class="hover_bottomLine">다음글 &gt</a><td>
 			</tr>
 		</table>
 	</div>
