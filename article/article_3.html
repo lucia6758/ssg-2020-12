@@ -93,33 +93,34 @@
 <section class="article_detail con-min-width">
 	<div class="con">
 		<div class="detail_top">
-		<h2 class="detail_title">[JAVA] 문자열 나누기 split</h2><div class="detail_info flex"><div class="detail_id">번호: 2</div><div class="detail_writer">작성자: 관리자</div><div class="detail_regDate">등록일: 2020-12-18 01:25:42</div><div class="detail_updateDate">수정일: 2020-12-18 01:25:42</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div>
+		<h2 class="detail_title">[SQL] 데이터 조회 SELECT</h2><div class="detail_info flex"><div class="detail_id">번호: 3</div><div class="detail_writer">작성자: 관리자</div><div class="detail_regDate">등록일: 2020-12-20 15:04:04</div><div class="detail_updateDate">수정일: 2020-12-20 15:04:04</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div>
 		</div>
 		<div class="detail_body">
-		# split
-- split을 사용해 문자열을 나눌 수 있다
-```java
-public static void main(String[] args) {
-String 동물들 = "개,고양이,소,말,돼지";
-String[] 동물 = 동물들.split(",");
-for(int i = 0; i < 동물.length; i++){
-System.out.println(동물[i]);
-}
-}
+		# SELECT
+- 칼럼명에 *를 넣으면 모든 칼럼을 조회할 수 있다.
 ```
-- 결과
-```
-개
-고양이
-소
-말
-돼지
+SELECT `칼럼명`
+FROM `테이블명`;
 ```
 
+# SELECT, WHERE (조건추가)
+- 뒤에 WHERE를 붙이면 원하는 조건의 데이터만 조회할 수 있다.
+```
+SELECT `칼럼명`
+FROM `테이블명`
+WHERE `칼럼` = `데이터`;
+```
 
+# 예시
+```
+SELECT *
+FROM article
+WHERE id = 1;
+```
+- 이렇게 쓴다면 id가 1인 row의 모든 칼럼들이 조회된다.
 		</div>
 		<div class="detail_movePage flex flex-jc-sb">
-		<div class="page-back"><a href="article_1.html" class="hover_bottomLine">&lt 이전글</a></div><div class="page-list"><a href="list_study_1.html" class="hover_bottomLine">목록</a></div><td class="page-next"><a href="article_3.html" class="hover_bottomLine">다음글 &gt</a><td>
+		<div class="page-back"><a href="article_2.html" class="hover_bottomLine">&lt 이전글</a></div><div class="page-list"><a href="list_study_1.html" class="hover_bottomLine">목록</a></div><td class="page-next"><a href="article_4.html" class="hover_bottomLine">다음글 &gt</a><td>
 		</div>
 		<div class="detail_reply">
 			<div id="disqus_thread"></div>
