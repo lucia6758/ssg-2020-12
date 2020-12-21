@@ -83,86 +83,26 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con"><i class="fas fa-database"></i> <span>SQL</span></h1>
-			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script
-	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
-<section class="article_detail con-min-width">
-	<div class="con">
-		<div class="detail_top">
-		<h2 class="detail_title">데이터 조회 SELECT(2)</h2><div class="detail_info flex"><div class="detail_id">번호: 4</div><div class="detail_writer">작성자: 관리자</div><div class="detail_regDate">등록일: 2020-12-20 16:32:12</div><div class="detail_updateDate">수정일: 2020-12-20 16:32:12</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div>
-		</div>
-		<div class="detail_body">
-		전글에서는 조건문으로 WHERE만 소개했지만 더 많은 조건들을 추가할 수 있다
-
-# LIKE 
-```
-SELECT *
-FROM article
-WHERE title LIKE 'SQL%';
-```
-- 이렇게 조회하면 SQL로 시작하는 제목을 가진 데이터들을 조회할 수 있다.
-- %는 앞, 뒤 모두에 붙일 수 있다.
-
-# ORDER BY
-```
-SELECT *
-FROM article
-ORDER BY id DESC;
-```
-- 이렇게 조회하면 id의 내림차수대로 데이터들이 조회된다.
-- DESC는 내림차순, ASC는 오름차순을 나타낸다. (descending, ascending)
-- DESC는 describe로 데이터타입을 조회할때도 쓰인다. 줄임말만 같을 뿐 여기서 쓰이는 것과 관련 없음.
-
-# LIMIT
-```
-SELECT *
-FROM article
-LIMIT 2;
-```
-- 조회하고싶은 데이터의 갯수를 정할 수 있다. 예시처럼 LIMIT을 사용하면 데이터가 많아도 2개만 나타난다.
-
----
-위의 조건들을 한번에 다 사용 할 수도 있다.
-		</div>
-		<div class="detail_movePage flex flex-jc-sb">
-		<div class="page-back"><a href="article_3.html" class="hover_bottomLine">&lt 이전글</a></div><div class="page-list"><a href="list_sql_1.html" class="hover_bottomLine">목록</a></div><td class="page-next"><td>
-		</div>
-		<div class="detail_reply">
-			<div id="disqus_thread"></div>
-			<script>
-				(function() { // DON'T EDIT BELOW THIS LINE
-					var d = document, s = d.createElement('script');
-					s.src = 'https://klvs-blog.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-				})();
-			</script>
-			<noscript>
-				Please enable JavaScript to view the <a
-					href="https://disqus.com/?ref_noscript">comments powered by
-					Disqus.</a>
-			</noscript>
-		</div>
-	</div>
-</section>
-
+			</section><section class="section-1 con-min-width">
+    <div class="con">
+      <table class="article-list">
+        <tr class="article-list__header">
+          <th class="th_id">번호</th>
+          <th class="th_title">제목</th>
+          <th class="th_writer">작성자</th>
+          <th class="th_regDate">등록일</th>
+          <th class="th_hit">조회수</th>
+          <th class="th_rec">추천수</th>
+        </tr>
+        <tr class="list"><td class="td_id">4</td><td class="td_title"><a href="article_4.html" class="hover_bottomLine">데이터 조회 SELECT(2)</a></td><td class="td_writer">관리자</td><td class="td_regDate">2020-12-20 16:32:12</td><td class="td_hit">0</td><td class="td_rec">0</td></tr><tr class="list"><td class="td_id">3</td><td class="td_title"><a href="article_3.html" class="hover_bottomLine">데이터 조회 SELECT</a></td><td class="td_writer">관리자</td><td class="td_regDate">2020-12-20 15:04:04</td><td class="td_hit">0</td><td class="td_rec">0</td></tr><tr class="list"><td class="td_id">1</td><td class="td_title"><a href="article_1.html" class="hover_bottomLine">데이터베이스,테이블,row 추가</a></td><td class="td_writer">관리자</td><td class="td_regDate">2020-12-18 01:07:10</td><td class="td_hit">0</td><td class="td_rec">0</td></tr>
+      </table>
+      <div class="paging">
+          <ul class="page_list flex flex-jc-c">
+          <li class="page_now"><a class="flex flex-ai-c">1</a></li>
+          </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="bottom-bar con-min-width">
