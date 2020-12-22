@@ -1,6 +1,6 @@
 /*
-SQLyog Community v13.1.5  (64 bit)
-MySQL - 10.4.6-MariaDB : Database - textBoard
+SQLyog Community v13.1.7 (64 bit)
+MySQL - 10.4.14-MariaDB : Database - textBoard
 *********************************************************************
 */
 
@@ -12,7 +12,7 @@ MySQL - 10.4.6-MariaDB : Database - textBoard
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`textBoard` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`textBoard` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
 USE `textBoard`;
 
@@ -22,8 +22,8 @@ DROP TABLE IF EXISTS `article`;
 
 CREATE TABLE `article` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `regDate` datetime NOT NULL,
-  `updateDate` datetime NOT NULL,
+  `regDate` date NOT NULL,
+  `updateDate` date NOT NULL,
   `title` char(200) NOT NULL,
   `body` text NOT NULL,
   `memberId` int(10) unsigned NOT NULL,
@@ -35,10 +35,10 @@ CREATE TABLE `article` (
 /*Data for the table `article` */
 
 insert  into `article`(`id`,`regDate`,`updateDate`,`title`,`body`,`memberId`,`boardId`,`hit`) values 
-(1,'2020-12-18 01:07:10','2020-12-18 01:07:10','데이터베이스,테이블,row 추가','# DB생성\r\n```\r\nCREATE DATABASE `DB이름`;\r\n```\r\n\r\n# table 생성\r\n```\r\nCREATE TABLE `테이블명` (\r\n `칼럼` 타입 조건,\r\n `칼럼2` 타입 조건,\r\n);\r\n```\r\n\r\n# row 생성\r\n```\r\nINSERT INTO `테이블명`\r\nSET `칼럼1` = \'data\',\r\n`칼럼2` = \'data\';\r\n```\r\n```\r\nINSERT INTO `테이블명` (`칼럼1`,`칼럼2)\r\nVALUES (\'data\',\'data\');\r\n```\r\n\r\n# 예시\r\n```\r\nCREATE DATABASE textBoard;\r\nUSE textBoard;\r\n\r\nCREATE TABLE article (\r\n    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,\r\n    regDate DATETIME NOT NULL,\r\n    title CHAR(200) NOT NULL,\r\n    `body` TEXT NOT NULL,\r\n    memberId INT(10) UNSIGNED NOT NULL, \r\n);\r\n\r\nINSERT INTO article\r\nSET regDate = NOW(),\r\ntitle = \'제목1\',\r\n`body` = \'내용1\',\r\nmemberId = 1;\r\n```',1,5,0),
-(2,'2020-12-18 01:25:42','2020-12-18 01:25:42','문자열 나누기 split','# split\r\n- split을 사용해 문자열을 나눌 수 있다\r\n```java\r\npublic static void main(String[] args) {\r\nString 동물들 = \"개,고양이,소,말,돼지\";\r\nString[] 동물 = 동물들.split(\",\");\r\nfor(int i = 0; i < 동물.length; i++){\r\nSystem.out.println(동물[i]);\r\n}\r\n}\r\n```\r\n- 결과\r\n```\r\n개\r\n고양이\r\n소\r\n말\r\n돼지\r\n```\r\n\r\n',1,4,0),
-(3,'2020-12-20 15:04:04','2020-12-20 15:04:04','데이터 조회 SELECT','# SELECT\r\n- 칼럼명에 *를 넣으면 모든 칼럼을 조회할 수 있다.\r\n```\r\nSELECT `칼럼명`\r\nFROM `테이블명`;\r\n```\r\n\r\n# SELECT, WHERE (조건추가)\r\n- 뒤에 WHERE를 붙이면 원하는 조건의 데이터만 조회할 수 있다.\r\n```\r\nSELECT `칼럼명`\r\nFROM `테이블명`\r\nWHERE `칼럼` = `데이터`;\r\n```\r\n\r\n# 예시\r\n```\r\nSELECT *\r\nFROM article\r\nWHERE id = 1;\r\n```\r\n- 이렇게 쓴다면 id가 1인 row의 모든 칼럼들이 조회된다.',1,5,0),
-(4,'2020-12-20 16:32:12','2020-12-20 16:32:12','데이터 조회 SELECT(2)','전글에서는 조건문으로 WHERE만 소개했지만 더 많은 조건들을 추가할 수 있다\r\n\r\n# LIKE \r\n```\r\nSELECT *\r\nFROM article\r\nWHERE title LIKE \'SQL%\';\r\n```\r\n- 이렇게 조회하면 SQL로 시작하는 제목을 가진 데이터들을 조회할 수 있다.\r\n- %는 앞, 뒤 모두에 붙일 수 있다.\r\n\r\n# ORDER BY\r\n```\r\nSELECT *\r\nFROM article\r\nORDER BY id DESC;\r\n```\r\n- 이렇게 조회하면 id의 내림차수대로 데이터들이 조회된다.\r\n- DESC는 내림차순, ASC는 오름차순을 나타낸다. (descending, ascending)\r\n- DESC는 describe로 데이터타입을 조회할때도 쓰인다. 줄임말만 같을 뿐 여기서 쓰이는 것과 관련 없음.\r\n\r\n# LIMIT\r\n```\r\nSELECT *\r\nFROM article\r\nLIMIT 2;\r\n```\r\n- 조회하고싶은 데이터의 갯수를 정할 수 있다. 예시처럼 LIMIT을 사용하면 데이터가 많아도 2개만 나타난다.\r\n\r\n---\r\n위의 조건들을 한번에 다 사용 할 수도 있다.',1,5,0);
+(1,'2020-12-18','2020-12-18','데이터베이스,테이블,row 추가','# DB생성\r\n```\r\nCREATE DATABASE `DB이름`;\r\n```\r\n\r\n# table 생성\r\n```\r\nCREATE TABLE `테이블명` (\r\n `칼럼` 타입 조건,\r\n `칼럼2` 타입 조건,\r\n);\r\n```\r\n\r\n# row 생성\r\n```\r\nINSERT INTO `테이블명`\r\nSET `칼럼1` = \'data\',\r\n`칼럼2` = \'data\';\r\n```\r\n```\r\nINSERT INTO `테이블명` (`칼럼1`,`칼럼2)\r\nVALUES (\'data\',\'data\');\r\n```\r\n\r\n# 예시\r\n```\r\nCREATE DATABASE textBoard;\r\nUSE textBoard;\r\n\r\nCREATE TABLE article (\r\n    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,\r\n    regDate DATETIME NOT NULL,\r\n    title CHAR(200) NOT NULL,\r\n    `body` TEXT NOT NULL,\r\n    memberId INT(10) UNSIGNED NOT NULL, \r\n);\r\n\r\nINSERT INTO article\r\nSET regDate = NOW(),\r\ntitle = \'제목1\',\r\n`body` = \'내용1\',\r\nmemberId = 1;\r\n```',1,5,0),
+(2,'2020-12-18','2020-12-18','문자열 나누기 split','# split\r\n- split을 사용해 문자열을 나눌 수 있다\r\n```java\r\npublic static void main(String[] args) {\r\nString 동물들 = \"개,고양이,소,말,돼지\";\r\nString[] 동물 = 동물들.split(\",\");\r\nfor(int i = 0; i < 동물.length; i++){\r\nSystem.out.println(동물[i]);\r\n}\r\n}\r\n```\r\n- 결과\r\n```\r\n개\r\n고양이\r\n소\r\n말\r\n돼지\r\n```\r\n\r\n',1,4,0),
+(3,'2020-12-20','2020-12-20','데이터 조회 SELECT','# SELECT\r\n- 칼럼명에 *를 넣으면 모든 칼럼을 조회할 수 있다.\r\n```\r\nSELECT `칼럼명`\r\nFROM `테이블명`;\r\n```\r\n\r\n# SELECT, WHERE (조건추가)\r\n- 뒤에 WHERE를 붙이면 원하는 조건의 데이터만 조회할 수 있다.\r\n```\r\nSELECT `칼럼명`\r\nFROM `테이블명`\r\nWHERE `칼럼` = `데이터`;\r\n```\r\n\r\n# 예시\r\n```\r\nSELECT *\r\nFROM article\r\nWHERE id = 1;\r\n```\r\n- 이렇게 쓴다면 id가 1인 row의 모든 칼럼들이 조회된다.',1,5,0),
+(4,'2020-12-20','2020-12-20','데이터 조회 SELECT(2)','전글에서는 조건문으로 WHERE만 소개했지만 더 많은 조건들을 추가할 수 있다\r\n\r\n# LIKE \r\n```\r\nSELECT *\r\nFROM article\r\nWHERE title LIKE \'SQL%\';\r\n```\r\n- 이렇게 조회하면 SQL로 시작하는 제목을 가진 데이터들을 조회할 수 있다.\r\n- %는 앞, 뒤 모두에 붙일 수 있다.\r\n\r\n# ORDER BY\r\n```\r\nSELECT *\r\nFROM article\r\nORDER BY id DESC;\r\n```\r\n- 이렇게 조회하면 id의 내림차수대로 데이터들이 조회된다.\r\n- DESC는 내림차순, ASC는 오름차순을 나타낸다. (descending, ascending)\r\n- DESC는 describe로 데이터타입을 조회할때도 쓰인다. 줄임말만 같을 뿐 여기서 쓰이는 것과 관련 없음.\r\n\r\n# LIMIT\r\n```\r\nSELECT *\r\nFROM article\r\nLIMIT 2;\r\n```\r\n- 조회하고싶은 데이터의 갯수를 정할 수 있다. 예시처럼 LIMIT을 사용하면 데이터가 많아도 2개만 나타난다.\r\n\r\n---\r\n위의 조건들을 한번에 다 사용 할 수도 있다.',1,5,0);
 
 /*Table structure for table `articleRecommand` */
 
@@ -101,8 +101,8 @@ DROP TABLE IF EXISTS `member`;
 
 CREATE TABLE `member` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `regDate` datetime NOT NULL,
-  `updateDate` datetime NOT NULL,
+  `regDate` date NOT NULL,
+  `updateDate` date NOT NULL,
   `userId` char(30) NOT NULL,
   `userPw` varchar(50) NOT NULL,
   `name` char(30) NOT NULL,
@@ -112,7 +112,7 @@ CREATE TABLE `member` (
 /*Data for the table `member` */
 
 insert  into `member`(`id`,`regDate`,`updateDate`,`userId`,`userPw`,`name`) values 
-(1,'2020-12-18 01:07:10','2020-12-18 01:07:10','admin','admin','관리자');
+(1,'2020-12-18','2020-12-18','admin','admin','엘밍');
 
 /*Table structure for table `reply` */
 
