@@ -8,48 +8,73 @@
 
 
 <url>
-  <loc>https://blog.klvs.xyz/</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/index.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/index.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/article/list_notice_1.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/my/about.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/article/list_free_1.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/article/list_java_1.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/article/list_study_1.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/article/list_sql_1.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/stat/index.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/article/list_htmlCss_1.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/article/article_2.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>http://blog.klvs.xyz/article/list_js_1.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/article/article_1.html</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>http://blog.klvs.xyz/stat/index.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://blog.klvs.xyz/stat/</loc>
-  <lastmod>2020-12-18T03:41:34+00:00</lastmod>
+  <loc>http://blog.klvs.xyz/article/article_6.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.klvs.xyz/article/article_5.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.klvs.xyz/article/article_4.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.klvs.xyz/article/article_3.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.klvs.xyz/article/article_2.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.klvs.xyz/article/article_1.html</loc>
+  <lastmod>2020-12-23T03:43:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
