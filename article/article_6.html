@@ -76,26 +76,61 @@
 		<main class="flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con"><i class="far fa-file-code"></i> <span>HTML/CSS</span></h1>
-			</section><section class="section-1 con-min-width">
-    <div class="con">
-      <table class="article-list">
-        <tr class="article-list__header">
-          <th class="th_id">번호</th>
-          <th class="th_title">제목</th>
-          <th class="th_writer">작성자</th>
-          <th class="th_regDate">등록일</th>
-          <th class="th_hit">조회수</th>
-          <th class="th_rec">추천수</th>
-        </tr>
-        <tr class="list"><td class="td_id">6</td><td class="td_title"><a href="article_6.html" class="hover_bottomLine">코드펜 플러그인 테스트</a></td><td class="td_writer">엘밍</td><td class="td_regDate">2020-12-23</td><td class="td_hit">0</td><td class="td_rec">0</td></tr>
-      </table>
-      <div class="paging">
-          <ul class="page_list flex flex-jc-c">
-          <li class="page_now"><a class="flex flex-ai-c">1</a></li>
-          </ul>
-      </div>
-    </div>
-  </section>
+			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+<section class="article_detail con-min-width">
+	<div class="con">
+		<div class="detail_top">
+		<h2 class="detail_title">코드펜 플러그인 테스트</h2><div class="detail_info flex"><div class="detail_id">번호: 6</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-23</div><div class="detail_updateDate">수정일: 2020-12-23</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div>
+		</div>
+		<div class="detail_body">
+		# hover
+- hover를 이용하면 마우스를 올렸을 때 색깔이나 크기 등 다양한 요소를 바꿀 수 있다. 예시에서는 색깔이 바뀌도록 만들어보았다.
+
+```codepen
+https://codepen.io/lucia6758/embed/RwRXqNN?height=500&theme-id=light&default-tab=html,result
+```
+		</div>
+		<div class="detail_movePage flex flex-jc-sb">
+		<div class="page-back"></div><div class="page-list"><a href="list_htmlCss_1.html" class="hover_bottomLine">목록</a></div><div class="page-next"></div>
+		</div>
+		<div class="detail_reply">
+			<div id="disqus_thread"></div>
+			<script>
+				(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://klvs-blog.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the <a
+					href="https://disqus.com/?ref_noscript">comments powered by
+					Disqus.</a>
+			</noscript>
+		</div>
+	</div>
+</section>
+
 </main>
 
 <footer class="bottom-bar con-min-width">
