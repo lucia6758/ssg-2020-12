@@ -1,6 +1,6 @@
 /*
-SQLyog Community v13.1.7 (64 bit)
-MySQL - 10.4.14-MariaDB : Database - textBoard
+SQLyog Community v13.1.5  (64 bit)
+MySQL - 10.4.6-MariaDB : Database - textBoard
 *********************************************************************
 */
 
@@ -12,7 +12,7 @@ MySQL - 10.4.14-MariaDB : Database - textBoard
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`textBoard` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`textBoard` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
 
 USE `textBoard`;
 
@@ -88,13 +88,15 @@ CREATE TABLE `board` (
   `name` char(50) NOT NULL,
   `code` char(50) NOT NULL,
   PRIMARY KEY (`boardId`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `board` */
 
 insert  into `board`(`boardId`,`regDate`,`updateDate`,`name`,`code`) values 
 (4,'2020-12-21 12:16:10','2020-12-21 12:16:10','JAVA','java'),
-(5,'2020-12-21 12:16:10','2020-12-21 12:16:10','SQL','sql');
+(5,'2020-12-21 12:16:10','2020-12-21 12:16:10','SQL','sql'),
+(6,'2020-12-23 10:26:02','2020-12-23 10:26:02','HTML/CSS','htmlCss'),
+(7,'2020-12-23 10:27:25','2020-12-23 10:27:25','JAVASCRIPT','js');
 
 /*Table structure for table `member` */
 
