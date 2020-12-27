@@ -28,36 +28,36 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.klvs.xyz" />
-<meta name="subject" content="초보개발자의 기술 블로그"/>
+<meta name="subject" content="데이터 조회 SELECT(2)"/>
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2020-12-27T17:54:50" />
-<meta name="lastmod" content="2020-12-27T17:54:50" />
+<meta name="pubdate" content="2020-12-27T18:11:50" />
+<meta name="lastmod" content="2020-12-27T18:11:50" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="초보개발자의 기술 블로그" />
-<meta property="og:description" content="열심히 배우는 중입니다😊" />
+<meta property="og:title" content="데이터 조회 SELECT(2)" />
+<meta property="og:description" content="전글에서는조건문으로WHERE만소개했지만더많은조건들을추가할수있다LIKESELECTFROMarticleWHEREtitleLIKESQL이렇게조회하면SQL로시작하는제목을가진데이터들을조회할수있다는앞뒤모두에붙일수있다ORDERBYSELECTFROMarticleORDERBYidDESC이렇게조회하면id의내림차수대로데이터들이조회된다DESC는내림차순ASC는오름차순을나타낸다descendingascendingDESC는describe로데이터타입을조회할때도쓰인다줄임말만같을뿐여기서쓰이는것과관련없음LIMITSELECTFROMarticleLIMIT2조회하고싶은데이터의갯수를정할수있다예시처럼LIMIT을사용하면데이터가많아도2개만나타난다위의조건들을한번에다사용할수도있다" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2020-12-27T17:54:50"/>
-<meta property="og:pubdate" content="2020-12-27T17:54:50" />
+<meta property="og:updated_time" content="2020-12-27T18:11:50"/>
+<meta property="og:pubdate" content="2020-12-27T18:11:50" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="초보개발자의 기술 블로그" />
+<meta name="twitter:title" content="데이터 조회 SELECT(2)" />
 <meta name="twitter:site" content="@Go On" />
 <meta name="twitter:creator" content="@Go On" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content="열심히 배우는 중입니다😊" />
+<meta name="twitter:description" content="전글에서는조건문으로WHERE만소개했지만더많은조건들을추가할수있다LIKESELECTFROMarticleWHEREtitleLIKESQL이렇게조회하면SQL로시작하는제목을가진데이터들을조회할수있다는앞뒤모두에붙일수있다ORDERBYSELECTFROMarticleORDERBYidDESC이렇게조회하면id의내림차수대로데이터들이조회된다DESC는내림차순ASC는오름차순을나타낸다descendingascendingDESC는describe로데이터타입을조회할때도쓰인다줄임말만같을뿐여기서쓰이는것과관련없음LIMITSELECTFROMarticleLIMIT2조회하고싶은데이터의갯수를정할수있다예시처럼LIMIT을사용하면데이터가많아도2개만나타난다위의조건들을한번에다사용할수도있다" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Go On" />
 <meta itemprop="name" content="Go On" />
-<meta itemprop="description" content="열심히 배우는 중입니다😊" />
+<meta itemprop="description" content="전글에서는조건문으로WHERE만소개했지만더많은조건들을추가할수있다LIKESELECTFROMarticleWHEREtitleLIKESQL이렇게조회하면SQL로시작하는제목을가진데이터들을조회할수있다는앞뒤모두에붙일수있다ORDERBYSELECTFROMarticleORDERBYidDESC이렇게조회하면id의내림차수대로데이터들이조회된다DESC는내림차순ASC는오름차순을나타낸다descendingascendingDESC는describe로데이터타입을조회할때도쓰인다줄임말만같을뿐여기서쓰이는것과관련없음LIMITSELECTFROMarticleLIMIT2조회하고싶은데이터의갯수를정할수있다예시처럼LIMIT을사용하면데이터가많아도2개만나타난다위의조건들을한번에다사용할수도있다" />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
 <title>데이터 조회 SELECT(2) | Go On | ARTICLE LIST SQL</title>
