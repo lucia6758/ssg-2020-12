@@ -32,8 +32,8 @@
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2020-12-27T18:11:50" />
-<meta name="lastmod" content="2020-12-27T18:11:50" />
+<meta name="pubdate" content="2020-12-27T19:27:21" />
+<meta name="lastmod" content="2020-12-27T19:27:21" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
@@ -44,8 +44,8 @@
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2020-12-27T18:11:50"/>
-<meta property="og:pubdate" content="2020-12-27T18:11:50" />
+<meta property="og:updated_time" content="2020-12-27T19:27:21"/>
+<meta property="og:pubdate" content="2020-12-27T19:27:21" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -137,11 +137,8 @@
 	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <section class="article_detail con-min-width">
 	<div class="con">
-		<div class="detail_top">
-		<h2 class="detail_title">데이터베이스,테이블,row 추가</h2><div class="detail_info flex"><div class="detail_id">번호: 1</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-18</div><div class="detail_updateDate">수정일: 2020-12-18</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div>
-		</div>
-		<div class="detail_body">
-		# DB생성
+		<div class="detail_top"><h2 class="detail_title">데이터베이스,테이블,row 추가</h2><div class="detail_info flex"><div class="detail_id">번호: 1</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-18</div><div class="detail_updateDate">수정일: 2020-12-18</div><div class="detail_hit">조회수: 0</div><div class="detail_rec">추천수: 0</div></div></div>
+		<div class="detail_body"># DB생성
 ```
 CREATE DATABASE `DB이름`;
 ```
@@ -183,14 +180,16 @@ SET regDate = NOW(),
 title = '제목1',
 `body` = '내용1',
 memberId = 1;
-```
-		</div>
+```</div>
 		<div class="detail_movePage flex flex-jc-sb">
-		<div class="page-back"></div><div class="page-list"><a href="list_sql_1.html" class="hover_bottomLine">목록</a></div><div class="page-next"><a href="article_3.html" class="hover_bottomLine">다음글 &gt</a></div>
-		</div>
+			<div class="page-back"></div><div class="page-list"><a href="list_sql_1.html" class="hover_bottomLine">목록</a></div><div class="page-next"><a href="article_3.html" class="hover_bottomLine">다음글 &gt</a></div></div>
 		<div class="detail_reply">
 			<div id="disqus_thread"></div>
 			<script>
+				var disqus_config = function() {
+					this.page.url = 'http://blog.klvs.xyz/article_1.html';
+					this.page.identifier = 'article_1.html';
+				};
 				(function() { // DON'T EDIT BELOW THIS LINE
 					var d = document, s = d.createElement('script');
 					s.src = 'https://klvs-blog.disqus.com/embed.js';
