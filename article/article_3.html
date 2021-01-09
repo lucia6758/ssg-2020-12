@@ -32,20 +32,20 @@
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2021-01-06T16:26:53" />
-<meta name="lastmod" content="2021-01-06T16:26:53" />
+<meta name="pubdate" content="2021-01-10T01:45:38" />
+<meta name="lastmod" content="2021-01-10T01:45:38" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="데이터 조회 SELECT" />
-<meta property="og:description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다SELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다SELECT칼럼명FROM테이블명WHERE칼럼데이터예시SELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
+<meta property="og:description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다sqlSELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다sqlSELECT칼럼명FROM테이블명WHERE칼럼데이터예시sqlSELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-06T16:26:53"/>
-<meta property="og:pubdate" content="2021-01-06T16:26:53" />
+<meta property="og:updated_time" content="2021-01-10T01:45:38"/>
+<meta property="og:pubdate" content="2021-01-10T01:45:38" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -53,11 +53,11 @@
 <meta name="twitter:site" content="@Go On" />
 <meta name="twitter:creator" content="@Go On" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다SELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다SELECT칼럼명FROM테이블명WHERE칼럼데이터예시SELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
+<meta name="twitter:description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다sqlSELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다sqlSELECT칼럼명FROM테이블명WHERE칼럼데이터예시sqlSELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Go On" />
 <meta itemprop="name" content="Go On" />
-<meta itemprop="description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다SELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다SELECT칼럼명FROM테이블명WHERE칼럼데이터예시SELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
+<meta itemprop="description" content="SELECT칼럼명에를넣으면모든칼럼을조회할수있다sqlSELECT칼럼명FROM테이블명SELECTWHERE조건추가뒤에WHERE를붙이면원하는조건의데이터만조회할수있다sqlSELECT칼럼명FROM테이블명WHERE칼럼데이터예시sqlSELECTFROMarticleWHEREid1이렇게쓴다면id가1인row의모든칼럼들이조회된다" />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
 <title>데이터 조회 SELECT | Go On | ARTICLE LIST SQL</title>
@@ -67,6 +67,9 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<!-- 제이쿼리 불러오기 -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
@@ -106,6 +109,9 @@
 						<li><a href="../stat/index.html" class="block"> <i
 								class="fas fa-chart-pie"></i> <span>STATISTICS</span>
 						</a></li>
+						<li><a href="../search.html" class="block"> <i
+								class="fas fa-search"></i> <span>SEARCH</span>
+						</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -137,24 +143,24 @@
 	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <section class="article_detail con-min-width">
 	<div class="con">
-		<div class="detail_top"><h2 class="detail_title">데이터 조회 SELECT</h2><div class="detail_info flex"><div class="detail_id">번호: 3</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-20</div><div class="detail_updateDate">수정일: 2021-01-06</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 0</div><div class="detail_likes">추천수: 0</div></div></div>
+		<div class="detail_top"><h2 class="detail_title">데이터 조회 SELECT</h2><div class="detail_info flex"><div class="detail_id">번호: 3</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-20</div><div class="detail_updateDate">수정일: 2021-01-10</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 0</div><div class="detail_likes">추천수: 0</div></div></div>
 		<div class="detail_body"># SELECT
 - 칼럼명에 *를 넣으면 모든 칼럼을 조회할 수 있다.
-```
+```sql
 SELECT `칼럼명`
 FROM `테이블명`;
 ```
 
 # SELECT, WHERE (조건추가)
 - 뒤에 WHERE를 붙이면 원하는 조건의 데이터만 조회할 수 있다.
-```
+```sql
 SELECT `칼럼명`
 FROM `테이블명`
 WHERE `칼럼` = `데이터`;
 ```
 
 # 예시
-```
+```sql
 SELECT *
 FROM article
 WHERE id = 1;
@@ -184,25 +190,24 @@ WHERE id = 1;
 		</div>
 	</div>
 </section>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <div class="top-botton">
-    <i class="fas fa-angle-up"></i>
-  </div>
+<div class="top-botton">
+	<i class="fas fa-angle-up"></i>
+</div>
 </main>
 
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-jc-c">
-		<a class="logo logo-mini flex flex-ai-c"> <img
-			src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
-			alt="Go On">
-		</a> </a>
+		<a class="logo logo-mini flex flex-ai-c">
+			<img
+				src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+				alt="Go On">
+		</a>
 		<div class="bottom-bar__site-info flex flex-ai-c">
-			<i class="far fa-copyright"></i> 2020 by Elming
+			<i class="far fa-copyright"></i>
+			2020 by Elming
 		</div>
 	</div>
 </footer>
-</div>
 <script src="app.js"></script>
 </body>
 </html>

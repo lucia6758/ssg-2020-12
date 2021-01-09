@@ -32,8 +32,8 @@
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2021-01-06T16:26:53" />
-<meta name="lastmod" content="2021-01-06T16:26:53" />
+<meta name="pubdate" content="2021-01-10T01:45:38" />
+<meta name="lastmod" content="2021-01-10T01:45:38" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
@@ -44,8 +44,8 @@
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-06T16:26:53"/>
-<meta property="og:pubdate" content="2021-01-06T16:26:53" />
+<meta property="og:updated_time" content="2021-01-10T01:45:38"/>
+<meta property="og:pubdate" content="2021-01-10T01:45:38" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -67,6 +67,9 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<!-- 제이쿼리 불러오기 -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
@@ -106,6 +109,9 @@
 						<li><a href="../stat/index.html" class="block"> <i
 								class="fas fa-chart-pie"></i> <span>STATISTICS</span>
 						</a></li>
+						<li><a href="../search.html" class="block"> <i
+								class="fas fa-search"></i> <span>SEARCH</span>
+						</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -126,29 +132,28 @@
 	<div class="articles_latest">
 		<h3>최신글</h3>
 		<ul class="list_latest flex flex-column">
-		<li class="flex"><a href="../article/article_6.html" class="block">[ HTML/CSS ] 코드펜 플러그인 테스트<span>2020-12-23</span></a></li><li class="flex"><a href="../article/article_5.html" class="block">[ SQL ] 데이터 수정 UPDATE<span>2020-12-22</span></a></li><li class="flex"><a href="../article/article_4.html" class="block">[ SQL ] 데이터 조회 SELECT(2)<span>2020-12-20</span></a></li><li class="flex"><a href="../article/article_3.html" class="block">[ SQL ] 데이터 조회 SELECT<span>2020-12-20</span></a></li><li class="flex"><a href="../article/article_2.html" class="block">[ JAVA ] 문자열 나누기 split<span>2020-12-18</span></a></li>
+		<li class="flex"><a href="../article/article_7.html" class="block">[ JAVA ] 예외처리 try catch<span>2021-01-07</span></a></li><li class="flex"><a href="../article/article_6.html" class="block">[ HTML/CSS ] 코드펜 플러그인 테스트<span>2020-12-23</span></a></li><li class="flex"><a href="../article/article_5.html" class="block">[ SQL ] 데이터 수정 UPDATE<span>2020-12-22</span></a></li><li class="flex"><a href="../article/article_4.html" class="block">[ SQL ] 데이터 조회 SELECT(2)<span>2020-12-20</span></a></li><li class="flex"><a href="../article/article_3.html" class="block">[ SQL ] 데이터 조회 SELECT<span>2020-12-20</span></a></li>
 		</ul>
 	</div>
 </section>
+</div><div class="top-botton">
+	<i class="fas fa-angle-up"></i>
 </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <div class="top-botton">
-    <i class="fas fa-angle-up"></i>
-  </div>
 </main>
 
 <footer class="bottom-bar con-min-width">
 	<div class="con flex flex-jc-c">
-		<a class="logo logo-mini flex flex-ai-c"> <img
-			src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
-			alt="Go On">
-		</a> </a>
+		<a class="logo logo-mini flex flex-ai-c">
+			<img
+				src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+				alt="Go On">
+		</a>
 		<div class="bottom-bar__site-info flex flex-ai-c">
-			<i class="far fa-copyright"></i> 2020 by Elming
+			<i class="far fa-copyright"></i>
+			2020 by Elming
 		</div>
 	</div>
 </footer>
-</div>
 <script src="app.js"></script>
 </body>
 </html>

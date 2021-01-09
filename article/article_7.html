@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-MJM4ZTK67S"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-MJM4ZTK67S');
+</script>
+<!-- 구글 서치 추적코드 -->
+<meta name="google-site-verification"
+	content="wUkBfkMNCD9ApivN3PJoZZvuzlZ5QekPeGAqah2SD8o" />
+
+<!-- 구글 애드센스 -->
+<script data-ad-client="ca-pub-8759106548274763" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta charset="UTF-8" />
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=1200">
+<meta name="apple-mobile-web-app-title" content="Go On" />
+<!-- 메타태그정보 //-->
+<!-- META -->
+<link rel="canonical" href="https://blog.klvs.xyz" />
+<meta name="subject" content="예외처리 try catch"/>
+<meta name="title" content="Go On" />
+<meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
+<meta name="copyright" content="Go On" />
+<meta name="pubdate" content="2021-01-10T01:45:38" />
+<meta name="lastmod" content="2021-01-10T01:45:38" />
+<!-- OPENGRAPH -->
+<meta property="og:site_name" content="Go On" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="예외처리 try catch" />
+<meta property="og:description" content="예외Exception란사용자의잘못된조작또는개발자의잘못된코딩으로인해발생하는프로그램오류예외가발생하면프로그램이종료되지만예외처리를통해정상적으로작동하게할수있다예외종류ArithmeticException정수를0으로나눌경우발생ArrayIndexOutOfBoundsExcetion배열의범위를벗어난index를접근할시발생ClassCastExcetion변환할수없는타입으로객체를반환시발생NullPointException존재하지않는레퍼런스를참조할때발생IllegalArgumentException잘못된인자를전달할때발생IOException입출력동작실패또는인터럽트시발생OutOfMemoryException메모리가부족한경우발생NumberFormatException문자열이나타내는숫자와일치하지않는타입의숫자로변환시발생trycatchjavatry예외가발생할수있는코드catchExceptione예외시실행finally예외발생여부와관계없이실행다중catchjavatrycatchArrayIndexOutOfBoundsExcetionecatchNumberFormatExceptione예외종류에따라다중catch를사용할수있다예외처리던지기throws리턴타입메소드명매개변수throws예외클래스1예외클래스2리턴타입메소드명매개변수throwsExceptionthrows는메소드선언부끝에작성되어메소드에서처리하지않은예외를호출한곳으로떠넘기는역할을한다위처럼예외클래스를여러가지쓸수도있고아래처럼모든예외를한번에넘길수도있다메인메소드에서는사용하지않는것이좋다예시javapublicvoidmethod1trymethod2catchClassCastExcetionSystemoutprintln클래스가존재하지않습니다publicvoidmethod2throwsClassCastExcetionClassclClassforNamejavalangString2" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="/img/logo/logo_opengraph.png" />
+<meta property="og:image:alt" content="blog.klvs.xyz" />
+<meta property="og:image:width" content="486" />
+<meta property="og:image:height" content="254" />
+<meta property="og:updated_time" content="2021-01-10T01:45:38"/>
+<meta property="og:pubdate" content="2021-01-10T01:45:38" />
+<meta property="og:url" content="https://blog.klvs.xyz" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="예외처리 try catch" />
+<meta name="twitter:site" content="@Go On" />
+<meta name="twitter:creator" content="@Go On" />
+<meta name="twitter:image" content="/img/logo/logo_opengraph.png">
+<meta name="twitter:description" content="예외Exception란사용자의잘못된조작또는개발자의잘못된코딩으로인해발생하는프로그램오류예외가발생하면프로그램이종료되지만예외처리를통해정상적으로작동하게할수있다예외종류ArithmeticException정수를0으로나눌경우발생ArrayIndexOutOfBoundsExcetion배열의범위를벗어난index를접근할시발생ClassCastExcetion변환할수없는타입으로객체를반환시발생NullPointException존재하지않는레퍼런스를참조할때발생IllegalArgumentException잘못된인자를전달할때발생IOException입출력동작실패또는인터럽트시발생OutOfMemoryException메모리가부족한경우발생NumberFormatException문자열이나타내는숫자와일치하지않는타입의숫자로변환시발생trycatchjavatry예외가발생할수있는코드catchExceptione예외시실행finally예외발생여부와관계없이실행다중catchjavatrycatchArrayIndexOutOfBoundsExcetionecatchNumberFormatExceptione예외종류에따라다중catch를사용할수있다예외처리던지기throws리턴타입메소드명매개변수throws예외클래스1예외클래스2리턴타입메소드명매개변수throwsExceptionthrows는메소드선언부끝에작성되어메소드에서처리하지않은예외를호출한곳으로떠넘기는역할을한다위처럼예외클래스를여러가지쓸수도있고아래처럼모든예외를한번에넘길수도있다메인메소드에서는사용하지않는것이좋다예시javapublicvoidmethod1trymethod2catchClassCastExcetionSystemoutprintln클래스가존재하지않습니다publicvoidmethod2throwsClassCastExcetionClassclClassforNamejavalangString2" />
+<!-- GOOGLE+ -->
+<meta itemprop="headline" content="Go On" />
+<meta itemprop="name" content="Go On" />
+<meta itemprop="description" content="예외Exception란사용자의잘못된조작또는개발자의잘못된코딩으로인해발생하는프로그램오류예외가발생하면프로그램이종료되지만예외처리를통해정상적으로작동하게할수있다예외종류ArithmeticException정수를0으로나눌경우발생ArrayIndexOutOfBoundsExcetion배열의범위를벗어난index를접근할시발생ClassCastExcetion변환할수없는타입으로객체를반환시발생NullPointException존재하지않는레퍼런스를참조할때발생IllegalArgumentException잘못된인자를전달할때발생IOException입출력동작실패또는인터럽트시발생OutOfMemoryException메모리가부족한경우발생NumberFormatException문자열이나타내는숫자와일치하지않는타입의숫자로변환시발생trycatchjavatry예외가발생할수있는코드catchExceptione예외시실행finally예외발생여부와관계없이실행다중catchjavatrycatchArrayIndexOutOfBoundsExcetionecatchNumberFormatExceptione예외종류에따라다중catch를사용할수있다예외처리던지기throws리턴타입메소드명매개변수throws예외클래스1예외클래스2리턴타입메소드명매개변수throwsExceptionthrows는메소드선언부끝에작성되어메소드에서처리하지않은예외를호출한곳으로떠넘기는역할을한다위처럼예외클래스를여러가지쓸수도있고아래처럼모든예외를한번에넘길수도있다메인메소드에서는사용하지않는것이좋다예시javapublicvoidmethod1trymethod2catchClassCastExcetionSystemoutprintln클래스가존재하지않습니다publicvoidmethod2throwsClassCastExcetionClassclClassforNamejavalangString2" />
+<meta itemprop="image" content="/img/logo/logo_opengraph.png" />
+
+<title>예외처리 try catch | Go On | ARTICLE LIST JAVA</title>
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="../logo.ico" type="image/x-icon"/>
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="app.css" />
+<!-- 제이쿼리 불러오기 -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+	<div class="body-content flex flex-column min-height-100vh">
+		<div class="header con-min-width con flex flex-jc-sb">
+			<!-- 로고바 시작 -->
+			<header class="logo-bar">
+				<div class="height-100p flex">
+					<a href="../index.html" class="logo flex flex-ai-c"> <img
+						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+						alt="Go On">
+					</a>
+				</div>
+			</header>
+			<!-- 로고바 끝 -->
+
+			<!-- 메뉴바 시작 -->
+			<header class="menu-bar">
+				<nav class="menu-bar__menu-1">
+					<ul class="flex">
+						<li><a href="../my/about.html" class="block"> <i
+								class="far fa-hand-point-right"></i> <span>ABOUT</span>
+						</a></li>
+						<li><a class="block"> <i class="fas fa-pencil-alt"></i> <span>STUDY</span>
+						</a>
+							<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li>
+							</ul></li>
+						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
+						</a>
+							<ul>
+								<li><a href="https://roqkfrhdqngkwk.tistory.com/" target="_blank"
+									class="block"> <i class="fab fa-blogger-b"></i> <span>BLOG</span>
+								</a></li>
+								<li><a href="https://github.com/lucia6758/mysql-text-board" target="_blank" class="block"> <i class="fab fa-github"></i>
+										<span>GITHUB</span>
+								</a></li>
+							</ul></li>
+						<li><a href="../stat/index.html" class="block"> <i
+								class="fas fa-chart-pie"></i> <span>STATISTICS</span>
+						</a></li>
+						<li><a href="../search.html" class="block"> <i
+								class="fas fa-search"></i> <span>SEARCH</span>
+						</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- 메뉴바 끝 -->
+		</div>
+
+		<main class="flex-grow-1">
+			<section class="title-bar con-min-width">
+				<h1 class="con"><i class="fab fa-java"></i> <span>JAVA</span></h1>
+			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+<section class="article_detail con-min-width">
+	<div class="con">
+		<div class="detail_top"><h2 class="detail_title">예외처리 try catch</h2><div class="detail_info flex"><div class="detail_id">번호: 7</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2021-01-07</div><div class="detail_updateDate">수정일: 2021-01-10</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 0</div><div class="detail_likes">추천수: 0</div></div></div>
+		<div class="detail_body"># 예외(Exception)란?
+사용자의 잘못된 조작 또는 개발자의 잘못된 코딩으로 인해 발생하는 프로그램 오류. 예외가 발생하면 프로그램이 종료되지만 예외처리를 통해 정상적으로 작동하게 할 수 있다.
+
+## 예외 종류
+- ArithmeticException : 정수를 0으로 나눌경우 발생 
+- ArrayIndexOutOfBoundsExcetion : 배열의 범위를 벗어난 index를 접근할 시 발생
+- ClassCastExcetion : 변환할 수 없는 타입으로 객체를 반환 시 발생
+- NullPointException : 존재하지 않는 레퍼런스를 참조할때 발생
+- IllegalArgumentException : 잘못된 인자를 전달 할 때 발생 
+- IOException : 입출력 동작 실패 또는 인터럽트 시 발생 
+- OutOfMemoryException : 메모리가 부족한 경우 발생
+- NumberFormatException : 문자열이 나타내는 숫자와 일치하지 않는 타입의 숫자로 변환시 발생
+
+# try catch
+```java
+try{
+
+    예외가 발생할 수 있는 코드
+
+}catch (Exception e){
+
+    예외시 실행
+
+}finally{
+
+    예외발생 여부와 관계없이 실행
+} 
+```
+
+## 다중 catch 
+```java
+try{
+
+} catch (ArrayIndexOutOfBoundsExcetion e){
+
+} catch (NumberFormatException e){
+
+}
+```
+예외종류에 따라 다중 catch를 사용할 수 있다.
+
+## 예외처리 던지기 throws
+```
+리턴타입 메소드명(매개변수) throws 예외클래스1, 예외클래스2, ...{
+}
+
+리턴타입 메소드명(매개변수) throws Exception{
+}
+```
+throws는 메소드 선언부 끝에 작성되어 메소드에서 처리하지 않은 예외를 호출한 곳으로 떠넘기는 역할을 한다. 위처럼 예외클래스를 여러가지 쓸 수도 있고 아래처럼 모든 예외를 한번에 넘길 수도 있다.
+메인 메소드에서는 사용하지 않는 것이 좋다.
+
+### 예시
+```java
+public void method1(){
+    try {
+        method2();
+    } catch (ClassCastExcetion) {
+        System.out.println("클래스가 존재하지 않습니다");
+    }
+}
+
+public void method2() throws ClassCastExcetion{
+    Class cl = Class.forName("java.lang.String2");
+}
+```
+</div>
+		<div class="detail_movePage flex flex-jc-sb">
+			<div class="page-back"><a href="article_2.html" class="hover_bottomLine">&lt 이전글</a></div><div class="page-list"><a href="list_java_1.html" class="hover_bottomLine">목록</a></div><div class="page-next"></div></div>
+		<div class="detail_reply">
+			<div id="disqus_thread"></div>
+			<script>
+				var disqus_config = function() {
+					this.page.url = 'http://blog.klvs.xyz/article_7.html';
+					this.page.identifier = 'article_7.html';
+				};
+				(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://klvs-blog.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the <a
+					href="https://disqus.com/?ref_noscript">comments powered by
+					Disqus.</a>
+			</noscript>
+		</div>
+	</div>
+</section>
+<div class="top-botton">
+	<i class="fas fa-angle-up"></i>
+</div>
+</main>
+
+<footer class="bottom-bar con-min-width">
+	<div class="con flex flex-jc-c">
+		<a class="logo logo-mini flex flex-ai-c">
+			<img
+				src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+				alt="Go On">
+		</a>
+		<div class="bottom-bar__site-info flex flex-ai-c">
+			<i class="far fa-copyright"></i>
+			2020 by Elming
+		</div>
+	</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
