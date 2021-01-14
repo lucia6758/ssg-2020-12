@@ -28,24 +28,24 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.klvs.xyz" />
-<meta name="subject" content="Go On"/>
+<meta name="subject" content="Go On" />
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2021-01-11T21:41:01" />
-<meta name="lastmod" content="2021-01-11T21:41:01" />
+<meta name="pubdate" content="2021-01-14T22:33:20" />
+<meta name="lastmod" content="2021-01-14T22:33:20" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Go On" />
 <meta property="og:description" content="초보개발자의 기술 블로그😊" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="/img/logo/logo_opengraph.png" />
+<meta property="og:image" content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-11T21:41:01"/>
-<meta property="og:pubdate" content="2021-01-11T21:41:01" />
+<meta property="og:updated_time" content="2021-01-14T22:33:20" />
+<meta property="og:pubdate" content="2021-01-14T22:33:20" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -62,80 +62,133 @@
 
 <title>Go On | HOME</title>
 <!-- 파비콘 -->
-<link rel="shortcut icon" href="../logo.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="app.css" />
+
 <!-- 제이쿼리 불러오기 -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js" defer></script>
+
+<link rel="stylesheet" href="app.css" />
+<script src="app.js" defer></script>
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
-		<div class="header con-min-width con flex flex-jc-sb">
-			<!-- 로고바 시작 -->
-			<header class="logo-bar">
-				<div class="height-100p flex">
-					<a href="../index.html" class="logo flex flex-ai-c"> <img
-						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
-						alt="Go On">
-					</a>
-				</div>
-			</header>
-			<!-- 로고바 끝 -->
+		<div class="header con-min-width">
+			<div class="con height-100p flex flex-jc-sb">
+				<!-- 로고바 시작 -->
+				<header class="logo-bar">
+					<div class="height-100p flex">
+						<a href="../index.html" class="logo">
+							<img
+								src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+								alt="Go On">
+						</a>
+					</div>
+				</header>
+				<!-- 로고바 끝 -->
 
-			<!-- 메뉴바 시작 -->
-			<header class="menu-bar">
-				<nav class="menu-bar__menu-1">
-					<ul class="flex">
-						<li><a href="../my/about.html" class="block"> <i
-								class="far fa-hand-point-right"></i> <span>ABOUT</span>
-						</a></li>
-						<li><a class="block"> <i class="fas fa-pencil-alt"></i> <span>STUDY</span>
-						</a>
-							<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li>
-							</ul></li>
-						<li><a class="block"> <i class="fas fa-link"></i> <span>LINK</span>
-						</a>
-							<ul>
-								<li><a href="https://roqkfrhdqngkwk.tistory.com/" target="_blank"
-									class="block"> <i class="fab fa-blogger-b"></i> <span>BLOG</span>
-								</a></li>
-								<li><a href="https://github.com/lucia6758/mysql-text-board" target="_blank" class="block"> <i class="fab fa-github"></i>
-										<span>GITHUB</span>
-								</a></li>
-							</ul></li>
-						<li><a href="../stat/index.html" class="block"> <i
-								class="fas fa-chart-pie"></i> <span>STATISTICS</span>
-						</a></li>
-						<li><a href="../search.html" class="block"> <i
-								class="fas fa-search"></i> <span>SEARCH</span>
-						</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!-- 메뉴바 끝 -->
+				<!-- 메뉴바 시작 -->
+				<header class="menu-bar">
+					<nav class="menu-bar__menu-1">
+						<ul class="flex">
+							<li>
+								<a href="../my/about.html" class="block">
+									<i class="far fa-hand-point-right"></i>
+									<span>ABOUT</span>
+								</a>
+							</li>
+							<li>
+								<a class="block">
+									<i class="fas fa-pencil-alt"></i>
+									<span>STUDY</span>
+								</a>
+								<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="block">
+									<i class="fas fa-link"></i>
+									<span>LINK</span>
+								</a>
+								<ul>
+									<li>
+										<a href="https://roqkfrhdqngkwk.tistory.com/" target="_blank"
+											class="block">
+											<i class="fab fa-blogger-b"></i>
+											<span>BLOG</span>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/lucia6758/mysql-text-board"
+											target="_blank" class="block">
+											<i class="fab fa-github"></i>
+											<span>GITHUB</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="../stat/index.html" class="block">
+									<i class="fas fa-chart-pie"></i>
+									<span>STATISTICS</span>
+								</a>
+							</li>
+							<li>
+								<a href="../search.html" class="block">
+									<i class="fas fa-search"></i>
+									<span>SEARCH</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<!-- 메뉴바 끝 -->
+			</div>
 		</div>
 
-		<main class="flex-grow-1">
-			<section class="title-bar con-min-width">
-				<h1 class="con"><i class="fas fa-home"></i> <span>HOME</span></h1>
-			</section><div class="main con-min-width con flex">
-    <section class="section-1">
-    <div class="main_info">
-      <a>안녕하세요 초보개발자의 블로그입니다😎</a>
-    </div>
-  </section> 
+		<main class="flex-grow-1 con-min-width">
+			<section class="title-bar con">
+				<h1><i class="fas fa-home"></i> <span>HOME</span></h1>
+			</section><div class="main con-min-width">
+	<div class="con flex">
+		<section class="section-1">
+			<div class="main_info">
+				<a>안녕하세요 초보개발자의 블로그입니다😎</a>
+			</div>
+		</section>
 
-<section class="section-2">
-	<div class="articles_latest">
-		<h3>최신글</h3>
-		<ul class="list_latest flex flex-column">
-		<li class="flex"><a href="../article/article_7.html" class="block">[ JAVA ] 예외처리 try catch<span>2021-01-07</span></a></li><li class="flex"><a href="../article/article_6.html" class="block">[ HTML/CSS ] 코드펜 플러그인 테스트<span>2020-12-23</span></a></li><li class="flex"><a href="../article/article_5.html" class="block">[ SQL ] 데이터 수정 UPDATE<span>2020-12-22</span></a></li><li class="flex"><a href="../article/article_4.html" class="block">[ SQL ] 데이터 조회 SELECT(2)<span>2020-12-20</span></a></li><li class="flex"><a href="../article/article_3.html" class="block">[ SQL ] 데이터 조회 SELECT<span>2020-12-20</span></a></li>
-		</ul>
+		<section class="section-2">
+			<div class="articles_latest">
+				<h3>최신글</h3>
+				<ul class="list_latest flex flex-column">
+					<li class="flex"><a href="../article/article_7.html" class="block">[ JAVA ] 예외처리 try catch<span>2021-01-07</span></a></li><li class="flex"><a href="../article/article_6.html" class="block">[ HTML/CSS ] 코드펜 플러그인 테스트<span>2020-12-23</span></a></li><li class="flex"><a href="../article/article_5.html" class="block">[ SQL ] 데이터 수정 UPDATE<span>2020-12-22</span></a></li><li class="flex"><a href="../article/article_4.html" class="block">[ SQL ] 데이터 조회 SELECT(2)<span>2020-12-20</span></a></li><li class="flex"><a href="../article/article_3.html" class="block">[ SQL ] 데이터 조회 SELECT<span>2020-12-20</span></a></li>
+				</ul>
+			</div>
+		</section>
 	</div>
-</section>
 </div><div class="top-botton">
 	<i class="fas fa-angle-up"></i>
 </div>
@@ -154,6 +207,5 @@
 		</div>
 	</div>
 </footer>
-<script src="app.js"></script>
 </body>
 </html>
