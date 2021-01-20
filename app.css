@@ -510,7 +510,7 @@ a {
   left:-100%;
   width:70%;
   height:100%;
-  background-color:rgba( 255, 255, 255, 0.9 );
+  background-color:white;
   transition: left .3s;
 }
 .mobile-menu-bar.active {
