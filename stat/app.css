@@ -102,6 +102,10 @@ a {
   align-self:center;
 }
 
+.flex-wrap {
+  flex-wrap:wrap;
+}
+
 .flex-grow-1{
   flex-grow:1;
 }
@@ -212,6 +216,7 @@ a {
 .section-1 {
   width:50%;
   min-width:320px;
+  margin-bottom:50px;
 }
 /* 메인 소개글 끝 */
 
