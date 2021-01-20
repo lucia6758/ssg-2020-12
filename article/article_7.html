@@ -32,20 +32,21 @@
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2021-01-14T22:33:20" />
-<meta name="lastmod" content="2021-01-14T22:33:20" />
+<meta name="pubdate" content="2021-01-21T00:07:36" />
+<meta name="lastmod" content="2021-01-21T00:07:36" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="예외처리 try catch" />
 <meta property="og:description" content="예외Exception란사용자의잘못된조작또는개발자의잘못된코딩으로인해발생하는프로그램오류예외가발생하면프로그램이종료되지만예외처리를통해정상적으로작동하게할수있다예외종류ArithmeticException정수를0으로나눌경우발생ArrayIndexOutOfBoundsExcetion배열의범위를벗어난index를접근할시발생ClassCastExcetion변환할수없는타입으로객체를반환시발생NullPointException존재하지않는레퍼런스를참조할때발생IllegalArgumentException잘못된인자를전달할때발생IOException입출력동작실패또는인터럽트시발생OutOfMemoryException메모리가부족한경우발생NumberFormatException문자열이나타내는숫자와일치하지않는타입의숫자로변환시발생trycatchjavatry예외가발생할수있는코드catchExceptione예외시실행finally예외발생여부와관계없이실행다중catchjavatrycatchArrayIndexOutOfBoundsExcetionecatchNumberFormatExceptione예외종류에따라다중catch를사용할수있다예외처리던지기throws리턴타입메소드명매개변수throws예외클래스1예외클래스2리턴타입메소드명매개변수throwsExceptionthrows는메소드선언부끝에작성되어메소드에서처리하지않은예외를호출한곳으로떠넘기는역할을한다위처럼예외클래스를여러가지쓸수도있고아래처럼모든예외를한번에넘길수도있다메인메소드에서는사용하지않는것이좋다예시javapublicvoidmethod1trymethod2catchClassCastExcetionSystemoutprintln클래스가존재하지않습니다publicvoidmethod2throwsClassCastExcetionClassclClassforNamejavalangString2" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
+<meta property="og:image"
+	content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-14T22:33:20" />
-<meta property="og:pubdate" content="2021-01-14T22:33:20" />
+<meta property="og:updated_time" content="2021-01-21T00:07:36" />
+<meta property="og:pubdate" content="2021-01-21T00:07:36" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -67,6 +68,9 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+<!-- 반응형 필수 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- 제이쿼리 불러오기 -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -78,7 +82,8 @@
 
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
 <script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"
+	defer></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <link rel="stylesheet"
@@ -89,14 +94,15 @@
 
 <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
 <script
-	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js" defer></script>
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"
+	defer></script>
 
 <link rel="stylesheet" href="app.css" />
 <script src="app.js" defer></script>
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
-		<div class="header con-min-width">
+		<div class="header con-min-width visible-md-up">
 			<div class="con height-100p flex flex-jc-sb">
 				<!-- 로고바 시작 -->
 				<header class="logo-bar">
@@ -125,7 +131,7 @@
 									<i class="fas fa-pencil-alt"></i>
 									<span>STUDY</span>
 								</a>
-								<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li>
+								<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li><li><a href="../article/list_etc_1.html" class="block"><i class="fas fa-ellipsis-h"></i> <span>ETC</span></a></li>
 								</ul>
 							</li>
 							<li>
@@ -169,12 +175,76 @@
 			</div>
 		</div>
 
+		<!-- 모바일 탑바 -->
+		<header class="mobile-logo-bar con-min-width flex visible-sm-down">
+			<div class="flex-1-0-0 flex">
+				<div class="side-bar-menu-btn flex-as-c">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="mobile-logo flex">
+				<a href="../index.html" class="logo flex-ai-c">
+					<img
+						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+						alt="Go On">
+				</a>
+			</div>
+			<div class="flex-1-0-0">
+				<div class="mobile-search flex height-100p">
+					<a href="../search.html" class="flex-as-c">🔍</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- 모바일 탑바 끝 -->
+
+		<!-- 모바일 메뉴 바 -->
+		<aside class="mobile-menu-bar visible-sm-down">
+			<nav class="mobile-menu flex flex-column height-100p">
+				<span class="mobile-menu-title">MENU</span>
+				<ul class="flex flex-column">
+					<li>
+						<a href="#" class="block">
+							<span>JAVA</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block">
+							<span>SQL</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block">
+							<span>JAVASCRIPT</span>
+						</a>
+					</li>
+				</ul>
+				<div class="menu-icon">
+					<a href="../my/about.html">
+						<i class="fas fa-user"></i>
+					</a>
+					<a href="https://github.com/lucia6758/mysql-text-board">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://roqkfrhdqngkwk.tistory.com/">
+						<i class="fab fa-blogger-b"></i>
+					</a>
+					<a href="../stat/index.html">
+						<i class="fas fa-chart-pie"></i>
+					</a>
+				</div>
+			</nav>
+		</aside>
+		<!-- 모바일 메뉴 바 끝 -->
+
 		<main class="flex-grow-1 con-min-width">
 			<section class="title-bar con">
 				<h1><i class="fab fa-java"></i> <span>JAVA</span></h1>
 			</section><section class="article_detail con-min-width">
 	<div class="con">
-		<div class="detail_top"><h2 class="detail_title">예외처리 try catch</h2><div class="detail_info flex"><div class="detail_id">번호: 7</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2021-01-07</div><div class="detail_updateDate">수정일: 2021-01-14</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 0</div><div class="detail_likes">추천수: 0</div></div></div>
+		<div class="detail_top"><h2 class="detail_title">예외처리 try catch</h2><div class="detail_info flex"><div class="detail_id">번호: 7</div><div class="detail_writer">작성자: Elming</div><div class="detail_regDate">등록일: 2021-01-07</div><div class="detail_updateDate">수정일: 2021-01-21</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 0</div><div class="detail_likes">추천수: 0</div></div></div>
 		<script type="text/x-template">
 # 예외(Exception)란?
 사용자의 잘못된 조작 또는 개발자의 잘못된 코딩으로 인해 발생하는 프로그램 오류. 예외가 발생하면 프로그램이 종료되지만 예외처리를 통해 정상적으로 작동하게 할 수 있다.
@@ -274,7 +344,7 @@ public void method2() throws ClassCastExcetion{
 </div>
 </main>
 
-<footer class="bottom-bar con-min-width">
+<footer class="bottom-bar con-min-width visible-md-up">
 	<div class="con flex flex-jc-c">
 		<a class="logo logo-mini flex flex-ai-c">
 			<img
@@ -287,5 +357,19 @@ public void method2() throws ClassCastExcetion{
 		</div>
 	</div>
 </footer>
+
+<!-- 모바일 하단바-->
+  <footer class="mobile-bottom-bar con-min-width visible-sm-down">
+    <div class="con flex flex-jc-c">
+      <a href="./" class="logo logo-mini flex flex-ai-c">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png" alt="Go On">
+      </a>
+      <div class="bottom-bar__site-info flex flex-ai-c">
+        <i class="far fa-copyright"></i> 2020 by Elming
+      </div>
+    </div>
+  </footer>
+<!-- 모바일 하단바 끝-->
+</div>
 </body>
 </html>

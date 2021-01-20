@@ -32,20 +32,21 @@
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
-<meta name="pubdate" content="2021-01-14T22:33:20" />
-<meta name="lastmod" content="2021-01-14T22:33:20" />
+<meta name="pubdate" content="2021-01-21T00:07:36" />
+<meta name="lastmod" content="2021-01-21T00:07:36" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="데이터베이스,테이블,row 추가" />
 <meta property="og:description" content="DB생성sqlCREATEDATABASEDB이름table생성sqlCREATETABLE테이블명칼럼타입조건칼럼2타입조건row생성sqlINSERTINTO테이블명SET칼럼1data칼럼2datasqlINSERTINTO테이블명칼럼1칼럼2VALUESdatadata예시sqlCREATEDATABASEtextBoardUSEtextBoardCREATETABLEarticleidINT10UNSIGNEDNOTNULLPRIMARYKEYAUTOINCREMENTregDateDATETIMENOTNULLtitleCHAR200NOTNULLbodyTEXTNOTNULLmemberIdINT10UNSIGNEDNOTNULLINSERTINTOarticleSETregDateNOWtitle제목1body내용1memberId1" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
+<meta property="og:image"
+	content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
 <meta property="og:image:alt" content="blog.klvs.xyz" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-14T22:33:20" />
-<meta property="og:pubdate" content="2021-01-14T22:33:20" />
+<meta property="og:updated_time" content="2021-01-21T00:07:36" />
+<meta property="og:pubdate" content="2021-01-21T00:07:36" />
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -67,6 +68,9 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+<!-- 반응형 필수 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- 제이쿼리 불러오기 -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -78,7 +82,8 @@
 
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
 <script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js" defer></script>
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"
+	defer></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <link rel="stylesheet"
@@ -89,14 +94,15 @@
 
 <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
 <script
-	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js" defer></script>
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"
+	defer></script>
 
 <link rel="stylesheet" href="app.css" />
 <script src="app.js" defer></script>
 </head>
 <body>
 	<div class="body-content flex flex-column min-height-100vh">
-		<div class="header con-min-width">
+		<div class="header con-min-width visible-md-up">
 			<div class="con height-100p flex flex-jc-sb">
 				<!-- 로고바 시작 -->
 				<header class="logo-bar">
@@ -125,7 +131,7 @@
 									<i class="fas fa-pencil-alt"></i>
 									<span>STUDY</span>
 								</a>
-								<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li>
+								<ul><li><a href="../article/list_java_1.html" class="block"><i class="fab fa-java"></i> <span>JAVA</span></a></li><li><a href="../article/list_sql_1.html" class="block"><i class="fas fa-database"></i> <span>SQL</span></a></li><li><a href="../article/list_htmlCss_1.html" class="block"><i class="far fa-file-code"></i> <span>HTML/CSS</span></a></li><li><a href="../article/list_js_1.html" class="block"><i class="fab fa-js-square"></i> <span>JAVASCRIPT</span></a></li><li><a href="../article/list_etc_1.html" class="block"><i class="fas fa-ellipsis-h"></i> <span>ETC</span></a></li>
 								</ul>
 							</li>
 							<li>
@@ -169,12 +175,76 @@
 			</div>
 		</div>
 
+		<!-- 모바일 탑바 -->
+		<header class="mobile-logo-bar con-min-width flex visible-sm-down">
+			<div class="flex-1-0-0 flex">
+				<div class="side-bar-menu-btn flex-as-c">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="mobile-logo flex">
+				<a href="../index.html" class="logo flex-ai-c">
+					<img
+						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png"
+						alt="Go On">
+				</a>
+			</div>
+			<div class="flex-1-0-0">
+				<div class="mobile-search flex height-100p">
+					<a href="../search.html" class="flex-as-c">🔍</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- 모바일 탑바 끝 -->
+
+		<!-- 모바일 메뉴 바 -->
+		<aside class="mobile-menu-bar visible-sm-down">
+			<nav class="mobile-menu flex flex-column height-100p">
+				<span class="mobile-menu-title">MENU</span>
+				<ul class="flex flex-column">
+					<li>
+						<a href="#" class="block">
+							<span>JAVA</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block">
+							<span>SQL</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block">
+							<span>JAVASCRIPT</span>
+						</a>
+					</li>
+				</ul>
+				<div class="menu-icon">
+					<a href="../my/about.html">
+						<i class="fas fa-user"></i>
+					</a>
+					<a href="https://github.com/lucia6758/mysql-text-board">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://roqkfrhdqngkwk.tistory.com/">
+						<i class="fab fa-blogger-b"></i>
+					</a>
+					<a href="../stat/index.html">
+						<i class="fas fa-chart-pie"></i>
+					</a>
+				</div>
+			</nav>
+		</aside>
+		<!-- 모바일 메뉴 바 끝 -->
+
 		<main class="flex-grow-1 con-min-width">
 			<section class="title-bar con">
 				<h1><i class="fas fa-database"></i> <span>SQL</span></h1>
 			</section><section class="article_detail con-min-width">
 	<div class="con">
-		<div class="detail_top"><h2 class="detail_title">데이터베이스,테이블,row 추가</h2><div class="detail_info flex"><div class="detail_id">번호: 1</div><div class="detail_writer">작성자: 엘밍</div><div class="detail_regDate">등록일: 2020-12-18</div><div class="detail_updateDate">수정일: 2021-01-14</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 8</div><div class="detail_likes">추천수: 0</div></div></div>
+		<div class="detail_top"><h2 class="detail_title">데이터베이스,테이블,row 추가</h2><div class="detail_info flex"><div class="detail_id">번호: 1</div><div class="detail_writer">작성자: Elming</div><div class="detail_regDate">등록일: 2020-12-18</div><div class="detail_updateDate">수정일: 2021-01-21</div><div class="detail_reply">댓글수: 0</div><div class="detail_hit">조회수: 8</div><div class="detail_likes">추천수: 0</div></div></div>
 		<script type="text/x-template">
 # DB생성
 ```sql
@@ -250,7 +320,7 @@ memberId = 1;
 </div>
 </main>
 
-<footer class="bottom-bar con-min-width">
+<footer class="bottom-bar con-min-width visible-md-up">
 	<div class="con flex flex-jc-c">
 		<a class="logo logo-mini flex flex-ai-c">
 			<img
@@ -263,5 +333,19 @@ memberId = 1;
 		</div>
 	</div>
 </footer>
+
+<!-- 모바일 하단바-->
+  <footer class="mobile-bottom-bar con-min-width visible-sm-down">
+    <div class="con flex flex-jc-c">
+      <a href="./" class="logo logo-mini flex flex-ai-c">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAz2pt%2FbtqQZwGVDcn%2FZxUna67OZpdqDpc5TMF4A1%2Fimg.png" alt="Go On">
+      </a>
+      <div class="bottom-bar__site-info flex flex-ai-c">
+        <i class="far fa-copyright"></i> 2020 by Elming
+      </div>
+    </div>
+  </footer>
+<!-- 모바일 하단바 끝-->
+</div>
 </body>
 </html>
