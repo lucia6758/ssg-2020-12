@@ -28,7 +28,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.klvs.xyz" />
-<meta name="subject" content="Go On" />
+<meta name="subject" content="[JSTL] 날짜포맷 변경" />
 <meta name="title" content="Go On" />
 <meta name="keywords" content="HTML, CSS, JAVASCRIPT, JAVA, SPRING, MySQL, 리눅스, 리액트" />
 <meta name="copyright" content="Go On" />
@@ -37,8 +37,8 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="Go On" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Go On" />
-<meta property="og:description" content="초보개발자의 기술 블로그😊" />
+<meta property="og:title" content="[JSTL] 날짜포맷 변경" />
+<meta property="og:description" content="1상단에JSTL을사용하기위한선언jsptaglibprefixcurihttpjavasuncomjspjstlcoreJSTL은라이브러리이기때문에사용하기위해core를추가한다br2날짜포맷을변경하기위한코드추가jsptaglibprefixfmturihttpjavasuncomjspjstlfmt이것까지추가해야날짜포맷을변경할수있다br31String형태인날짜를Date형태로변환jspfmtparseDatevaluearticleregDatevarregDatepatternyyyyMMddHHmmssString상태에서바로변경할수없기때문에우선형변환을시켜야한다이미Date형이라면이단계는건너뛰어도된다value에는가져올String값을넣고pattern에는현재날짜형식을넣는다br32원하는날짜포맷으로변경jspfmtformatDatevalueregDatepatternMMddHHmmvalue에Date형으로바꾼값을넣고pattern에원하는형식의포맷을넣으면변경완료br" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image"
 	content="https://blog.klvs.xyz/img/logo/logo_opengraph.png" />
@@ -50,18 +50,18 @@
 <meta property="og:url" content="https://blog.klvs.xyz" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Go On" />
+<meta name="twitter:title" content="[JSTL] 날짜포맷 변경" />
 <meta name="twitter:site" content="@Go On" />
 <meta name="twitter:creator" content="@Go On" />
 <meta name="twitter:image" content="/img/logo/logo_opengraph.png">
-<meta name="twitter:description" content="초보개발자의 기술 블로그😊" />
+<meta name="twitter:description" content="1상단에JSTL을사용하기위한선언jsptaglibprefixcurihttpjavasuncomjspjstlcoreJSTL은라이브러리이기때문에사용하기위해core를추가한다br2날짜포맷을변경하기위한코드추가jsptaglibprefixfmturihttpjavasuncomjspjstlfmt이것까지추가해야날짜포맷을변경할수있다br31String형태인날짜를Date형태로변환jspfmtparseDatevaluearticleregDatevarregDatepatternyyyyMMddHHmmssString상태에서바로변경할수없기때문에우선형변환을시켜야한다이미Date형이라면이단계는건너뛰어도된다value에는가져올String값을넣고pattern에는현재날짜형식을넣는다br32원하는날짜포맷으로변경jspfmtformatDatevalueregDatepatternMMddHHmmvalue에Date형으로바꾼값을넣고pattern에원하는형식의포맷을넣으면변경완료br" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="Go On" />
 <meta itemprop="name" content="Go On" />
-<meta itemprop="description" content="초보개발자의 기술 블로그😊" />
+<meta itemprop="description" content="1상단에JSTL을사용하기위한선언jsptaglibprefixcurihttpjavasuncomjspjstlcoreJSTL은라이브러리이기때문에사용하기위해core를추가한다br2날짜포맷을변경하기위한코드추가jsptaglibprefixfmturihttpjavasuncomjspjstlfmt이것까지추가해야날짜포맷을변경할수있다br31String형태인날짜를Date형태로변환jspfmtparseDatevaluearticleregDatevarregDatepatternyyyyMMddHHmmssString상태에서바로변경할수없기때문에우선형변환을시켜야한다이미Date형이라면이단계는건너뛰어도된다value에는가져올String값을넣고pattern에는현재날짜형식을넣는다br32원하는날짜포맷으로변경jspfmtformatDatevalueregDatepatternMMddHHmmvalue에Date형으로바꾼값을넣고pattern에원하는형식의포맷을넣으면변경완료br" />
 <meta itemprop="image" content="/img/logo/logo_opengraph.png" />
 
-<title>Go On | ABOUT</title>
+<title>[JSTL] 날짜포맷 변경 | Go On | ARTICLE LIST JAVA</title>
 <!-- 파비콘 -->
 <link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
 <!-- 폰트어썸 불러오기 -->
@@ -227,20 +227,67 @@
 
 		<main class="flex-grow-1 con-min-width">
 			<section class="title-bar con">
-				<h1><i class="far fa-hand-point-right"></i> <span>ABOUT</span></h1>
-			</section><section class="about con-min-width">
-    <div class="con">
-      <div class="nick flex flex-ai-c">
-        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FH39Sm%2FbtqQZw8LNTU%2FK0TzqK9zkjKsd17H43hugk%2Fimg.png" alt="profile">
-      <h2>Elming</h2>
-      </div> 
-      <div class="profile flex flex-column">
-        <span>NAME: Lee Soyoung</span>
-        <span>E-mail: lucia6758@gmail.com</span>
-        <span>초보개발자</span>
-      </div>
-    </div>
-  </section><div class="top-botton">
+				<h1><i class="fab fa-java"></i> <span>JAVA</span></h1>
+			</section><section class="article_detail con-min-width">
+	<div class="con">
+		<div class="detail_top"><h1 class="detail_title flex flex-jc-c">[JSTL] 날짜포맷 변경</h1><div class="detail_info flex flex-jc-c"><div class="detail_regDate">2021-02-05</div><div class="detail_writer">posted by Elming</div></div></div>
+		<script type="text/x-template">
+##  1. 상단에 JSTL을 사용하기 위한 선언
+```jsp
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+```
+JSTL은 라이브러리이기때문에 사용하기 위해 core를 추가한다.
+<br/>
+## 2. 날짜 포맷을 변경하기 위한 코드 추가
+```jsp
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+```
+이것까지 추가해야 날짜 포맷을 변경할 수 있다.
+<br/>
+## 3-1.  String 형태인 날짜를 Date 형태로 변환
+```jsp
+<fmt:parseDate value="${article.regDate}" var="regDate" pattern="yyyy-MM-dd HH:mm:ss" />
+```
+String 상태에서 바로 변경할 수 없기때문에 우선 형변환을 시켜야한다.
+이미 Date형이라면 이 단계는 건너뛰어도된다.
+value에는 가져올 String 값을 넣고 pattern에는 현재 날짜형식을 넣는다.
+<br/>
+
+## 3-2. 원하는 날짜 포맷으로 변경
+```jsp
+<fmt:formatDate value="${regDate}" pattern="MM.dd HH:mm" />
+```
+value에 Date형으로 바꾼값을 넣고 pattern에 원하는 형식의 포맷을 넣으면 변경 완료
+<br/>
+
+        </script>
+		<div class="detail_body toast-ui-viewer"></div>
+		<div class="detail_tag">tag : </div>
+		<div class="detail_movePage flex flex-jc-sb">
+			<div class="page-back"><a href="article_7.html" class="hover_bottomLine">&lt 이전글</a></div><div class="page-list"><a href="list_java_1.html" class="hover_bottomLine">목록</a></div><div class="page-next"></div></div>
+		<div class="detail_reply">
+			<div id="disqus_thread"></div>
+			<script>
+				var disqus_config = function() {
+					this.page.url = 'http://blog.klvs.xyz/article_12.html';
+					this.page.identifier = 'article_12.html';
+				};
+				(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://klvs-blog.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the
+				<a href="https://disqus.com/?ref_noscript">comments powered by
+					Disqus.</a>
+			</noscript>
+		</div>
+	</div>
+</section>
+<div class="top-botton">
 	<i class="fas fa-angle-up"></i>
 </div>
 </main>
